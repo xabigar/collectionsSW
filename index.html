@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorador de items</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header id="cabecera">
+    <h1>Explorador de items</h1>
+  </header>
+
+  <div id="contenedor-principal">
+
+    <nav id="menu-principal">
+      <button data-seccion="inicio" class="active">Inicio</button>
+      <button data-seccion="buscador">Buscador</button>
+      <button data-seccion="coleccion">Mi Colección</button>
+      <button data-seccion="gestionColeccion">Gestionar Colección</button>
+    </nav>
+
+    <main>
+      <section id="seccion-inicio" class="seccion activa"></section>
+      <section id="seccion-buscador" class="seccion"></section>
+      <section id="seccion-coleccion" class="seccion"></section>
+      <section id="seccion-gestionColeccion" class="seccion"></section>
+    </main>
+
+  </div>
+
+  <footer id="pie">
+    <p>Explorador de [items] · Grupo X</p>
+  </footer>
+
+  <script src="js/item.js"></script>
+  <script src="js/coleccionStorage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
